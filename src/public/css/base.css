@@ -1,0 +1,34 @@
+:root{
+    --red-color: red;
+    --gray-color: gray;
+    --white-coler: white;
+    --blue-color: rgb(123, 209, 245);
+    --black-color: black;
+    
+}
+
+@keyframes asm_slide_btn {
+    from{
+        transform: translateX(-100px);
+    }to{
+        transform: translateX(0);
+    }
+}
+@keyframes asm_slide_title {
+    from{
+        transform: translateY(-100px);
+    }to{
+        transform: translateY(0);
+    }
+}
+@keyframes h3 {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

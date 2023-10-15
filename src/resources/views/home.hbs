@@ -1,0 +1,145 @@
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+
+    <div class="carousel-item active">
+      <div class="title-sidle">
+        <h2>Thời Trang Mới Mẻ</h2>
+        <button>Xem Thêm</button>
+      </div>
+      <img class="d-block" src="/img/slide-01.jpg" alt="First slide">
+    </div>
+
+    <div class="carousel-item">
+      <div class="title-sidle">
+        <h2>Thời Trang Hót</h2>
+        <button>Xem Thêm</button>
+      </div>
+      <img class="d-block" src="/img/slide-02.jpg" alt="Second slide">
+    </div>
+
+    <div class="carousel-item">
+      <div class="title-sidle">
+        <h2>Thời Trang Dành Cho Giới Trẻ</h2>
+        <button>Xem Thêm</button>
+      </div>
+      <img class="d-block" src="/img/slide-03.jpg" alt="Third slide">
+    </div>
+  </div>
+
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<div class="category">
+  <a href="">
+    <div class="item-banner">
+      <div class="item-text">
+        <span>
+          <h1>Women</h1>
+        </span>
+        <span>Spring 2024</span>
+      </div>
+      <img src="img/banner-01.jpg">
+    </div>
+  </a>
+  <a href="">
+    <div class="item-banner">
+      <div class="item-text">
+        <span>
+          <h1>Mem</h1>
+        </span>
+        <span>Spring 2024</span>
+      </div>
+      <img src="img/banner-02.jpg">
+    </div>
+  </a>
+  <a href="">
+    <div class="item-banner">
+      <div class="item-text">
+        <span>
+          <h1>Accessories</h1>
+        </span>
+        <span>New Trend</span>
+      </div>
+      <img src="img/banner-03.jpg">
+    </div>
+  </a>
+  <a href="">
+    <div class="item-banner">
+      <div class="item-text">
+        <span>
+          <h1>Đồng Hồ</h1>
+        </span>
+        <span>New Trend</span>
+      </div>
+      <img src="img/banner-07.jpg">
+    </div>
+  </a>
+  <a href="">
+    <div class="item-banner">
+      <div class="item-text">
+        <span>
+          <h1>Ba Lô</h1>
+        </span>
+        <span>New Trend</span>
+      </div>
+      <img src="img/banner-08.jpg">
+    </div>
+  </a>
+</div>
+<div class="product-title">
+  <h1>Sản Phẩm Nổi Bật Tuần</h1>
+</div>
+<div class="shop-product">
+
+  {{#each product}}
+
+  <div class="img-name-price">
+    <img src="{{this.image}}">
+    <div class="name-price">
+      <div class="name-product">
+        <h5>{{this.name}}</h5>
+        <i class="far fa-heart"></i>
+      </div>
+      <p class="price-product">{{this.price}}</p>
+    </div>
+  </div>
+
+  {{/each}}
+
+</div>
+<div class="content">
+  <div class="title-content">
+    <h1>Thời Trang Giới Trẻ</h1>
+    <h3>Xu Hướng 2024</h3>
+    <h4>Sale off 30%</h4>
+    <a href="">Xem Thêm</a>
+  </div>
+  <img src="/img/slide-09.jpg">
+</div>
+<div class="product-title" style="margin-top: 30px;">
+  <h1>Sản Phẩm Mới Về</h1>
+</div>
+<div class="shop-product">
+
+  {{#each product}}
+
+  <div class="img-name-price">
+    <img src="{{this.image}}">
+    <div class="name-price">
+      <div class="name-product">
+        <h5>{{this.name}}</h5>
+        <i class="far fa-heart"></i>
+      </div>
+      <p class="price-product">{{this.price}}</p>
+    </div>
+  </div>
+
+  {{/each}}
+
+</div>
