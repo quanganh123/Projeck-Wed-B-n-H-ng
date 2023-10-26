@@ -1,6 +1,8 @@
 /* footer */
 
 footer{
+    margin-top: 160px;
+    width: 100%;
     background-color: rgb(60, 60, 60);
 }
 

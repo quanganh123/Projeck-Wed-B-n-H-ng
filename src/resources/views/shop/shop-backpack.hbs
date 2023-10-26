@@ -1,0 +1,59 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light categoty-dropdown">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContentshop"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">Danh Mục</a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContentshop">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/shop/shop-male">Quần Áo Nam</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/shop/shop-female">Quần Áo Nữ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/shop/shop-backpack">Ba Lô</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/shop/shop-clock">Đồng Hồ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/shop/shop-vest">Đồ Vest</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/shop/shop-footwear">Giày Dép</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="mt-5 container shop">
+    <div class="category-shop">
+        <h3><i class="fas fa-bars"></i>Danh Mục</h3>
+        <a href="/shop/shop-male">Quần Áo Nam</a>
+        <a href="/shop/shop-female">Quần Áo Nữ</a>
+        <a href="/shop/shop-backpack">Ba Lô</a>
+        <a href="/shop/shop-clock">Đồng Hồ</a>
+        <a href="/shop/shop-vest">Đồ Vest</a>
+        <a href="/shop/shop-footwear">Giày Dép</a>
+    </div>
+    <div class="product">
+        <div class="san-pham">Sản Phẩm</div>
+        <div class="product-shop">
+            {{#each product}}
+
+            <div class="img-name-price">
+                <img src="{{this.image}}">
+                <div class="name-price">
+                    <div class="name-product">
+                        <h5>{{this.name}}</h5>
+                    </div>
+                    <p class="price-product">{{this.price}}</p>
+                </div>
+            </div>
+
+            {{/each}}
+        </div>
+    </div>
+</div>

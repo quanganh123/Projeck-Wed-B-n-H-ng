@@ -1,4 +1,7 @@
 /* header */
+header{
+    width: 100%;
+}
 .btn {
     border-radius: 20px;
     background-color: var(--blue-color);

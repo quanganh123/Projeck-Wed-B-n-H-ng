@@ -1,26 +1,64 @@
-:root{
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+:root {
     --red-color: red;
     --gray-color: gray;
     --white-coler: white;
     --blue-color: rgb(123, 209, 245);
     --black-color: black;
-    
+
+}
+
+*{
+    list-style: none;
+}
+
+html {
+    animation: html 1s 0.1s;
+}
+
+@keyframes html {
+    100% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 0.7;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    30% {
+        opacity: 0.3;
+    }
+
+    0% {
+        opacity: 0;
+    }
 }
 
 @keyframes asm_slide_btn {
-    from{
+    from {
         transform: translateX(-100px);
-    }to{
+    }
+
+    to {
         transform: translateX(0);
     }
 }
+
 @keyframes asm_slide_title {
-    from{
+    from {
         transform: translateY(-100px);
-    }to{
+    }
+
+    to {
         transform: translateY(0);
     }
 }
+
 @keyframes h3 {
     from {
         transform: translateY(-100px);
