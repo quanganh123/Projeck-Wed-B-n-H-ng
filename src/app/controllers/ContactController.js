@@ -6,8 +6,6 @@ class ContactController {
         res.render("contact");
     };
 
-
-
     opinion(req, res, next) {
         const opinion = new Contact(req.body);
         opinion.save()

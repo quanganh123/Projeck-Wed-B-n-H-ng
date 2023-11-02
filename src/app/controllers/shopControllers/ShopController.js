@@ -13,6 +13,7 @@ class ShopController {
         }
 
     };
+
 };
 
 module.exports = new ShopController;
